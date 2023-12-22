@@ -3,7 +3,7 @@ LABEL author="BuSheeZy"
 LABEL maintainer="BuSheeZy@BadServers.net"
 LABEL org.opencontainers.image.source="https://github.com/BadServersNet/sniper-cs2-yolk"
 
-RUN apt install -y iproute2 \
+RUN apt install -y iproute2 librdkafka-dev \
   && adduser --disabled-password --home /home/container container
 
 USER container
